@@ -52,19 +52,19 @@ export const AppBar: React.FC = () => {
 
         {/* Nav Links */}
         {/* Wallet & Settings */}
-        <div className="navbar-center">
+        <div className="navbar-end">
           <div className="hidden md:inline-flex align-items-center justify-items gap-6">
-            <NavElement
-              label="Collections"
-              href="/"
-              navigationStarts={() => setIsNavOpen(false)}
-            />
-            <NavElement
-              label="Mint"
-              href="/mint"
-              navigationStarts={() => setIsNavOpen(false)}
-            />
-            <NavElement
+          <NavElement
+            label="Home"
+            href="/"
+            navigationStarts={() => setIsNavOpen(false)}
+          />
+          <NavElement
+            label="Basics"
+            href="/basics"
+            navigationStarts={() => setIsNavOpen(false)}
+          />
+          <NavElement
               label="Explorer"
               href="/explorer"
               navigationStarts={() => setIsNavOpen(false)}
@@ -80,10 +80,6 @@ export const AppBar: React.FC = () => {
               href="/rewards"
               navigationStarts={() => setIsNavOpen(false)}
             />
-            </div>
-        </div>
-
-        <div className="navbar-end">
           <WalletMultiButtonDynamic className="btn-ghost btn-sm rounded-btn text-lg mr-6 " />
         </div>
           <label
@@ -126,6 +122,6 @@ export const AppBar: React.FC = () => {
         </div>
         </div>
       </div>
-
+    </div>
   );
 };
