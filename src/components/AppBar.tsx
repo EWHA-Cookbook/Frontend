@@ -17,7 +17,7 @@ export const AppBar: React.FC = () => {
   return (
     <div>
       {/* NavBar / Header */}
-      <div className="navbar flex h-20 flex-row md:mb-2 shadow-lg bg-white text-neutral-content border-b border-zinc-600 bg-opacity-66">
+      <div className="navbar flex h-20 flex-row md:mb-2 shadow-lg bg-black text-neutral-content border-b border-zinc-600 bg-opacity-66">
         <div className="navbar-start align-items-center">
           <div className="hidden sm:inline w-22 h-22 md:p-2 ml-10">
             <Link href="https://solana.com" target="_blank" rel="noopener noreferrer" passHref className="text-secondary hover:text-white">
@@ -52,18 +52,38 @@ export const AppBar: React.FC = () => {
 
         {/* Nav Links */}
         {/* Wallet & Settings */}
-        <div className="navbar-end">
+        <div className="navbar-center">
           <div className="hidden md:inline-flex align-items-center justify-items gap-6">
+            <NavElement
+              label="Collections"
+              href="/"
+              navigationStarts={() => setIsNavOpen(false)}
+            />
+            <NavElement
+              label="Mint"
+              href="/mint"
+              navigationStarts={() => setIsNavOpen(false)}
+            />
+            <NavElement
+              label="Explorer"
+              href="/explorer"
+              navigationStarts={() => setIsNavOpen(false)}
+            />
+          
           <NavElement
-            label="Home"
-            href="/"
-            navigationStarts={() => setIsNavOpen(false)}
-          />
-          <NavElement
-            label="Basics"
-            href="/basics"
-            navigationStarts={() => setIsNavOpen(false)}
-          />
+              label="Swap Food"
+              href="/swapfood"
+              navigationStarts={() => setIsNavOpen(false)}
+            />
+            <NavElement
+              label="Rewards"
+              href="/rewards"
+              navigationStarts={() => setIsNavOpen(false)}
+            />
+            </div>
+        </div>
+
+        <div className="navbar-end">
           <WalletMultiButtonDynamic className="btn-ghost btn-sm rounded-btn text-lg mr-6 " />
         </div>
           <label
@@ -106,6 +126,6 @@ export const AppBar: React.FC = () => {
         </div>
         </div>
       </div>
-    </div>
+
   );
 };
