@@ -18,7 +18,7 @@ export const ContentContainer: React.FC<Props> = ({ children }) => {
       <div className="drawer-side">
         <label htmlFor="my-drawer" className="drawer-overlay gap-6"></label>
 
-        <ul className="p-4 overflow-y-auto menu w-80 bg-base-100 gap-10 sm:flex items-center">
+        <ul className="p-4 overflow-y-auto menu w-80 bg-base-100 bg-white gap-10 sm:flex items-center">
           <li>
             <Text variant="heading" className='font-extrabold tracking-tighter text-center text-transparent bg-clip-text bg-gradient-to-br from-indigo-500 to-fuchsia-500 mt-10'>Menu</Text>
           </li>
