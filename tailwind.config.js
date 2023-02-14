@@ -14,6 +14,7 @@ module.exports = {
         solana: {
           fontFamily: {
             serif: ['Abhaya Libre'],
+            sans: ['Manrope'],
             display: ['PT Mono, monospace'],
             body: ['Inter, sans-serif'],
           },
