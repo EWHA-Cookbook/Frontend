@@ -22,8 +22,7 @@ export const AppBar: React.FC = () => {
         <div className="navbar-start align-items-center">
           <div className="hidden sm:inline w-22 h-22 md:p-2 ml-10">
             <Link
-              href="https://solana.com"
-              target="_blank"
+              href="http://localhost:3000/"
               rel="noopener noreferrer"
               passHref
               className="text-secondary hover:text-white"
