@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import { ExplorerView } from "../views";
 
-const Mint: NextPage = (props) => {
+const Explorer: NextPage = (props) => {
   return (
     <div>
       <Head>
@@ -11,10 +11,11 @@ const Mint: NextPage = (props) => {
           name="description"
           content="Explorer Functionality"
         />
+        
       </Head>
       <ExplorerView />
     </div>
   );
 };
 
-export default Mint;
+export default Explorer;

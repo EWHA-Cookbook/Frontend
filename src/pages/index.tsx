@@ -9,7 +9,7 @@ const Home: NextPage = (props) => {
         <title>Solana CookBook Recipe Minter</title>
         <meta
           name="description"
-          content="Solana Scaffold"
+          content="Solana CookBook Main"
         />
       </Head>
       <HomeView />
