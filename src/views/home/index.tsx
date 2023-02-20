@@ -49,7 +49,7 @@ export const HomeView: FC = ({}) => {
             {' '}
             See more <br /> Dishes
           </p>
-          <p>Arrow</p>
+          <p>↓</p>
         </h4>
         <div className="flex grid grid-cols-3 border-1 border-black gap-0 mt-80 py-42.5">
           <div className="col-span-1 bg-transparent">
