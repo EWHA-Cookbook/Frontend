@@ -7,9 +7,10 @@ import { notify } from "../utils/notifications";
 // requirements stuff
 export const Minter: FC = () => {
     const { publicKey} = useWallet();
+    const { connection } = useConnection();
     const fs = require("fs");
-    const anchor = require("@project-serum/anchor");
-    const connection = new Connection(clusterApiUrl("mainnet-beta")); 
+
+  
     // const kp = loadKeypair("minf8m9eFyp7292L77V9yfTYEgUoDW476ZkqoXng9Bi.json");
     // const wallet = new anchor.Wallet(kp);
   
@@ -19,10 +20,14 @@ export const Minter: FC = () => {
         console.log('error', `Send Transaction: Wallet not connected!`);
         return;
     }
-    const wallet = new PublicKey(publicKey);
+    try {
 
-   console.log(publicKey);
-    // const drive = await new ShdwDrive(connection, wallet).init();
+        console.log(publicKey);
+        const drive = await new ShdwDrive(connection, publicKey).init();
+    }catch (error: any) {
+        notify({ type: 'error', message: `Airdrop failed!`, description: error?.message });
+        console.log('error', `Airdrop failed! ${error?.message}`);
+    }
     // const resp = await drive.createStorageAccount("Recipe Book","100MB","v2");
     // console.log(resp.transaction_signature);
     // console.log(resp.shdw_bucket); 
