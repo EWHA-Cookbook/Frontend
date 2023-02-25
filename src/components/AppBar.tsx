@@ -47,7 +47,7 @@ export const AppBar: React.FC = () => {
             <NavElement label="Rewards" href="/rewards" navigationStarts={() => setIsNavOpen(false)} />
       
             <WalletMultiButtonDynamic className="btn-ghost btn-sm rounded-btn text-lg mr-4 " />
-            <Image src="/profile2.png" alt="cookbook icon" className = "mr-10" width={40} height={10} />
+            {/* <Image src="/profile2.png" alt="cookbook icon" className = "mr-10" width={40} height={40} /> */}
           </div>
           <label
             htmlFor="my-drawer"
