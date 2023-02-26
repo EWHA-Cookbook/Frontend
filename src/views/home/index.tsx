@@ -70,40 +70,8 @@ export const HomeView: FC = ({}) => {
               </Link>
             </h4>
           </div>
-          <div className="col-span-2 bg-transparent">
+          <div className="col-span-2 bg-transparent border border-solid border-10 border-black">
             <h4 className="py-36 md:w-full text-2xl md:text-4xl text-center text-slate-300 my-2">
-              <p className="font-serif font-normal text-black text-center">
-                {' '}
-                Create <br /> a new Dish <br /> to an existing Menu
-              </p>
-              <p className="font-serif font-normal text-black text-center">
-                {' '}
-                Create <br /> a new Dish <br /> to an existing Menu
-              </p>
-              <p className="font-serif font-normal text-black text-center">
-                {' '}
-                Create <br /> a new Dish <br /> to an existing Menu
-              </p>
-              <p className="font-serif font-normal text-black text-center">
-                {' '}
-                Create <br /> a new Dish <br /> to an existing Menu
-              </p>
-              <p className="font-serif font-normal text-black text-center">
-                {' '}
-                Create <br /> a new Dish <br /> to an existing Menu
-              </p>
-              <p className="font-serif font-normal text-black text-center">
-                {' '}
-                Create <br /> a new Dish <br /> to an existing Menu
-              </p>
-              <p className="font-serif font-normal text-black text-center">
-                {' '}
-                Create <br /> a new Dish <br /> to an existing Menu
-              </p>
-              <p className="font-serif font-normal text-black text-center">
-                {' '}
-                Create <br /> a new Dish <br /> to an existing Menu
-              </p>
               <p className="font-serif font-normal text-black text-center">
                 {' '}
                 Create <br /> a new Dish <br /> to an existing Menu
@@ -113,13 +81,13 @@ export const HomeView: FC = ({}) => {
               </Link>
             </h4>
           </div>
-          <div className="col-span-1 bg-transparent">
+          <div className="col-span-1 bg-transparent border border-solid border-10 border-black">
             <Image src="/minimal2.png" alt="cookbook icon" width={500} height={140} />
           </div>
-          <div className="col-span-1 bg-transparent">
+          <div className="col-span-1 bg-transparent border border-solid border-10 border-black">
             <Image src="/minimal4.png" alt="cookbook icon" width={500} height={140} />
           </div>
-          <div className="col-span-2 bg-transparent">
+          <div className="col-span-2 bg-transparent border border-solid border-10 border-black">
             <h4 className="py-36 md:w-full text-2x1 md:text-4xl text-center text-slate-300 my-2">
               <p className="font-serif font-normal text-black text-center">
                 {' '}
