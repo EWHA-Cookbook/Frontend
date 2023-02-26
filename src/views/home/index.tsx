@@ -76,6 +76,38 @@ export const HomeView: FC = ({}) => {
                 {' '}
                 Create <br /> a new Dish <br /> to an existing Menu
               </p>
+              <p className="font-serif font-normal text-black text-center">
+                {' '}
+                Create <br /> a new Dish <br /> to an existing Menu
+              </p>
+              <p className="font-serif font-normal text-black text-center">
+                {' '}
+                Create <br /> a new Dish <br /> to an existing Menu
+              </p>
+              <p className="font-serif font-normal text-black text-center">
+                {' '}
+                Create <br /> a new Dish <br /> to an existing Menu
+              </p>
+              <p className="font-serif font-normal text-black text-center">
+                {' '}
+                Create <br /> a new Dish <br /> to an existing Menu
+              </p>
+              <p className="font-serif font-normal text-black text-center">
+                {' '}
+                Create <br /> a new Dish <br /> to an existing Menu
+              </p>
+              <p className="font-serif font-normal text-black text-center">
+                {' '}
+                Create <br /> a new Dish <br /> to an existing Menu
+              </p>
+              <p className="font-serif font-normal text-black text-center">
+                {' '}
+                Create <br /> a new Dish <br /> to an existing Menu
+              </p>
+              <p className="font-serif font-normal text-black text-center">
+                {' '}
+                Create <br /> a new Dish <br /> to an existing Menu
+              </p>
               <Link href="/add-dish">
                 <button className="mt-16 rounded-full bg-black color-white text-lg px-11 py-4">Mint</button>
               </Link>

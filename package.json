@@ -12,15 +12,18 @@
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
+    "@metaplex-foundation/js": "^0.18.1",
     "@noble/ed25519": "^1.7.1",
+    "@shadow-drive/sdk": "^3.1.1",
     "@solana/wallet-adapter-base": "^0.9.20",
     "@solana/wallet-adapter-react": "^0.15.28",
     "@solana/wallet-adapter-react-ui": "^0.9.27",
     "@solana/wallet-adapter-wallets": "^0.19.11",
-    "@solana/web3.js": "^1.73.0",
+    "@solana/web3.js": "^1.73.2",
     "@tailwindcss/typography": "^0.5.9",
     "daisyui": "^1.24.3",
     "date-fns": "^2.29.3",
+    "fs": "^0.0.1-security",
     "immer": "^9.0.19",
     "next": "^13.1.5",
     "next-compose-plugins": "^2.2.1",
@@ -41,5 +44,10 @@
   },
   "engines": {
     "node": ">=16"
+  },
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false
   }
 }
