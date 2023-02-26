@@ -12,29 +12,22 @@ export const Footer: FC = () => {
                                 
                             </div>
                             <div className="flex md:ml-2">
-                            <div className="hidden sm:inline w-22 h-22 md:p-2 ml-10">
-                                <Link
-                                href="http://localhost:3000/"
-                                rel="noopener noreferrer"
-                                passHref
-                                className="text-secondary hover:text-white"
-                                >
-                                <h1 className="text-center text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-indigo-500 to-fuchsia-500 mt-10 mb-8">
-                                    <Image src="/Logo.png" alt="cookbook icon" width={250} height={140} />
-                                </h1>
-                                </Link>
+                            <div className="flex flex-col mt-6 left-0 top-0 w-fit">
+                                <Image className="inline" src="/Logo.png" alt="cookbook icon" width={200} height={47.88} />
+                                <div className="w-35 h-1.5 border-t-2 border-b-1 border-solid border-black"></div>
+                                    <h1 className="font-serif text-left text-xl md:mx-5 font-bold text-inherit">Solana Cookbook</h1>
+                                <div className="w-35 h-1.5 border-t-1 border-b-2 border-black"></div>
                             </div>
                         </div>
                 </div>
-                        <div className="mb-6 items-center mx-auto max-w-screen-lg">
-                            <div className="font-normal capitalize mb-2.5">Copyrights 2022. Solana Cookbook.  All rights reserved</div>
+                        <div className="mb-6 items-center mx-auto max-w-screen-lg border">
+                            <div className="font-normal mb-2.5">Copyrights 2022. Solana Cookbook.  All rights reserved</div>
                         </div>
-
                         <div className="mb-6 items-center mx-auto max-w-screen-lg">
-                            <h5 className="font-normal capitalize tracking-tight  mb-2.5">BE THE SOLANA CHEF </h5>
+                            {/*Be The Solana Chef  */}
+                            <Image className="inline" src="/Logo.png" alt="cookbook icon" width={200} height={47.88} />
                             <div className="mb-6 items-center mx-auto max-w-screen-lg">
-                                <h5 className="font-normal capitalize tracking-tight  mb-2.5">DEVELOPERS</h5>
-                                <h5 className="font-normal capitalize tracking-tight  mb-2.5">DEVELOPERS</h5>
+                            {/* Discord Twitter Solana EWHA-CHAIN*/}
                             </div>            
                         </div>
                     </div>
