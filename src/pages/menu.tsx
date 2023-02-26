@@ -1,21 +1,20 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { ExplorerView } from "../views";
+import { MenuView } from "../views";
 
-const Explorer: NextPage = (props) => {
+const Menu: NextPage = (props) => {
   return (
     <div>
       <Head>
         <title>Solana CookBook Recipe Minter</title>
         <meta
           name="description"
-          content="Explorer Functionality"
+          content="Basic Functionality"
         />
-        
       </Head>
-      <ExplorerView />
+      <MenuView />
     </div>
   );
 };
 
-export default Explorer;
+export default Menu;

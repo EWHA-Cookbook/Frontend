@@ -13,7 +13,7 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
     return (
         <>
           <Head>
-            <title>Solana Scaffold Lite</title>
+            <title>Solana CookBook Recipe Minter</title>
           </Head>
 
           <ContextProvider>
@@ -22,8 +22,9 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
               <AppBar/>
               <ContentContainer>
                 <Component {...pageProps} />
+                <Footer/>
               </ContentContainer>
-              <Footer/>
+             
             </div>
           </ContextProvider>
         </>
