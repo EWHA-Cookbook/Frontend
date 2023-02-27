@@ -1,8 +1,6 @@
 
 import { FC } from "react";
-import { SignMessage } from '../../components/SignMessage';
-import { SendTransaction } from '../../components/SendTransaction';
-import { SendVersionedTransaction } from '../../components/SendVersionedTransaction';
+import { Minter } from "components/Minter";
 
 export const MintView: FC = ({ }) => {
 
@@ -14,9 +12,7 @@ export const MintView: FC = ({ }) => {
         </h1>
         {/* CONTENT GOES HERE */}
         <div className="text-center">
-          <SignMessage />
-          <SendTransaction />
-          <SendVersionedTransaction />
+          <Minter/>
         </div>
       </div>
     </div>
