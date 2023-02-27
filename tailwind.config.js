@@ -17,6 +17,9 @@ module.exports = {
         'solana': { 
           fontFamily: {
             display: ['PT Mono, monospace'],
+            serif: ['Abhaya Libre'],
+            sans: ['Manrope'],
+            cursive: ['Sacramento'],
             body: ['Inter, sans-serif'],
           },
           'primary': '#000000',           /* Primary color */
