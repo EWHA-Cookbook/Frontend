@@ -12,6 +12,9 @@ import pkg from '../../../package.json';
 // Store
 import useUserSOLBalanceStore from '../../stores/useUserSOLBalanceStore';
 
+// image
+import Image from 'next/image';
+
 export const HomeView: FC = ({}) => {
   const wallet = useWallet();
   const { connection } = useConnection();
@@ -27,28 +30,88 @@ export const HomeView: FC = ({}) => {
   }, [wallet.publicKey, connection, getUserSOLBalance]);
 
   return (
-    <div className="md:hero mx-auto p-4">
-      <div className="md:hero-content flex flex-col">
-        <div className="mt-6">
+    <div className="p-4">
+      {/* <svg className="">
+        <ellipse></ellipse>
+      </svg> */}
+
+      <div className="pt-40 px-36 flex flex-col">
+        <div className="flex flex-col mt-6 left-0 top-0 w-fit">
           <div className="text-sm font-normal align-bottom text-right text-slate-600 mt-4">v{pkg.version}</div>
-          <h1 className="text-center text-5xl md:pl-12 font-bold text-transparent bg-clip-text bg-gradient-to-br from-indigo-500 to-fuchsia-500 mb-4">
-            Solana Cookbook
-          </h1>
+
+          <Image className="inline" src="/Logo.png" alt="cookbook icon" width={391} height={70} />
+
+          <div className="w-38 h-1.5 border-t-2 border-b-1 border-solid border-black"></div>
+          <h1 className="font-serif text-left text-7xl md:mx-5 font-bold text-inherit">Solana Cookbook</h1>
+
+          <div className="w-38 h-1.5 border-t-1 border-b-2 border-black"></div>
         </div>
-        <h4 className="md:w-full text-2x1 md:text-4xl text-center text-slate-300 my-2">
-          {/* <p>Unleash the full power of blockchain with Solana and Next.js 13.</p> */}
-          <p className="text-slate-500 text-2x1 leading-relaxed">See more Dishes</p>
+        <div></div>
+
+        <h4 className="mt-52 md:w-full text-2xl md:text-4xl text-center text-slate-300 my-2">
+          <p className="font-serif font-normal text-black">
+            {' '}
+            See more <br /> Dishes
+          </p>
+          <p>↓</p>
         </h4>
-        <div className="flex flex-col mt-2">
-          <RequestAirdrop />
-          <h4 className="md:w-full text-2xl text-slate-300 my-2">
-            {wallet && (
-              <div className="flex flex-row justify-center">
-                <div>{(balance || 0).toLocaleString()}</div>
-                <div className="text-slate-600 ml-2">SOL</div>
-              </div>
-            )}
+        <div className="aspect-squre border-collapse border-hidden grid grid-cols-3 gap-0 mt-80 py-42.5 w-5/6">
+          <div className="grid-cols-1 border border-solid border-10 border-black col-span-1 bg-transparent">
+            <Image src="/minimal1.png" alt="cookbook icon" width={500} height={140} />
+          </div>
+          <div className="aspect-squre w-full col-span-2 bg-transparent border border-solid border-10 border-black ">
+            <h4 className="py-36 md:w-full text-2xl md:text-4xl text-center text-slate-300 my-2">
+              <p className="font-serif font-normal text-black text-center">
+                {' '}
+                Create <br /> a new Menu
+              </p>
+              <Link href="/menu">
+                <button className="mt-16 rounded-full bg-black color-white text-lg px-11 py-4">Mint</button>
+              </Link>
+            </h4>
+          </div>
+          <div className="col-span-2 bg-transparent">
+            <h4 className="py-36 md:w-full text-2xl md:text-4xl text-center text-slate-300 my-2">
+              <p className="font-serif font-normal text-black text-center">
+                {' '}
+                Create <br /> a new Dish <br /> to an existing Menu
+              </p>
+              <Link href="/add-dish">
+                <button className="mt-16 rounded-full bg-black color-white text-lg px-11 py-4">Mint</button>
+              </Link>
+            </h4>
+          </div>
+          <div className="col-span-1 bg-transparent">
+            <Image src="/minimal2.png" alt="cookbook icon" width={500} height={140} />
+          </div>
+          <div className="col-span-1 bg-transparent">
+            <Image src="/minimal4.png" alt="cookbook icon" width={500} height={140} />
+          </div>
+          <div className="col-span-2 bg-transparent">
+            <h4 className="py-36 md:w-full text-2x1 md:text-4xl text-center text-slate-300 my-2">
+              <p className="font-serif font-normal text-black text-center">
+                {' '}
+                Create <br /> an Individual Recipe
+              </p>
+              <Link href="/individual-menu">
+                <button className="mt-16 rounded-full bg-black color-white text-lg px-11 py-4">Mint</button>
+              </Link>
+            </h4>
+          </div>
+        </div>
+        <div className="flex flex-col">
+          <h4 className="pt-40 mt-30 text-2xl md:text-4x1 text-start text-black font-sans md:w-full color-black font-semibold">
+            Need more Recipes?
           </h4>
+          <h4 className="mt-2 md:w-full text-2xl md:text-2xl font-serif font-normal text-black my-2 text-right">
+            <Link href="/explorer">more </Link>
+          </h4>
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-x-9 h-40 border">
+            <div className="bg-white border-black border-1 border-solid">a</div>
+            <div className="bg-white border-black border-1 border-solid">b</div>
+            <div className="bg-white border-black border-1 border-solid">c</div>
+            <div className="bg-white border-black border-1 border-solid">c</div>
+          </div>
         </div>
       </div>
     </div>
